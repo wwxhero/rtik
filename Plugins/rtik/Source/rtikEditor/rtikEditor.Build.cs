@@ -13,6 +13,7 @@ public class rtikEditor : ModuleRules
 
         PrivateDependencyModuleNames.AddRange(new string[] { "EditorStyle", "AnimGraph", "BlueprintGraph", "PropertyEditor", "Slate", "SlateCore" });
 
+        PrivatePCHHeaderFile = "rtikEditor.h";
         // PublicIncludePaths.AddRange(new string[] { "rtikEditor/Public", "rtikEditor/Public/GraphNodes" });
 
         // PrivateIncludePaths.AddRange(new string[] { "rtikEditor/Private", "rtikEditor/Private/GraphNodes" });

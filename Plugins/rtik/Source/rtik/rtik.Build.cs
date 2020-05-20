@@ -5,20 +5,21 @@ using UnrealBuildTool;
 public class rtik : ModuleRules
 {
     public rtik(ReadOnlyTargetRules Target) : base(Target)
-    {     
+    {
         // PCHUsage = PCHUsageMode.UseExplicitOrSharedPCHs;
 
         PublicDependencyModuleNames.AddRange(new string[] { "Core", "CoreUObject", "Engine", "InputCore", "AnimGraphRuntime", "AnimationCore" });
 
         PrivateDependencyModuleNames.AddRange(new string[] {  });
 
+        PrivatePCHHeaderFile = "rtik.h";
         // PublicIncludePaths.AddRange(new string[] { "rtik/Public", "rtik/Public/IK", "rtik/Public/Utility" });
 
         // PrivateIncludePaths.AddRange(new string[] { "rtik/Private", "rtik/Private/IK", "rtik/Private/Utility"});
 
 		// Uncomment if you are using Slate UI
 		// PrivateDependencyModuleNames.AddRange(new string[] { "Slate", "SlateCore" });
-		
+
 		// Uncomment if you are using online features
 		// PrivateDependencyModuleNames.Add("OnlineSubsystem");
 
